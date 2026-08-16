@@ -93,10 +93,6 @@ button {
     cursor: pointer;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
 
 .head-section {
     position: sticky;
@@ -261,7 +257,119 @@ img {
 .appointment-btn:hover {
     background: var(--color-white);
 }
+.navbar2 {
+    max-width: var(--container-width);
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0% auto;
+    position: relative;
+}
 
+.nav2-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    display: none;
+}
+.nav2-left h1{
+    font-size: var(--fs-h1);
+    font-family: var(--font-heading);
+}
+.nav2-left a{
+    color: var(--color-blue-light);
+}
+.nav2-left span{
+    color: var(--color-white);
+}
+.nav2-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.search-btn {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 200;
+    transition: var(--transition);
+}
+
+.search-btn:hover {
+    transform: scale(1.1);
+}
+.menu-toggle {
+    color: var(--color-white);
+    font-size: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+.side-menu {
+    width: 100%;
+    z-index: 9999;
+    overflow-y: auto;
+    transition: transform 0.45s ease;
+    display:none;
+    position: fixed;
+    top: 25%;
+    left: 0;
+     width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.side-menu.active {
+    transform: translateX(0);
+}
+
+.side-menu-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--color-blue-light);
+    width: 100%;
+    padding: 20px;
+}
+.side-menu-links a{
+    color: var(--color-primary-dark);
+    font-size: var(--fs-h3);
+
+}
+.side-menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blue-light);
+    width: 100%;
+    padding: 10px 10px 20px 10px ;
+}
+
+.side-menu-btn a {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: var(--fs-lg);
+    color: var(--color-blue-light);
+    background: var(--color-primary-dark);
+    border-radius: var(--radius-xlg);
+    width: 200px;
+    text-align: center;
+}
 .hero {
     position: relative;
     max-height: 550px;
@@ -858,6 +966,7 @@ line-height: 2;
     background: var(--color-blue-light);
     border-radius: var(--radius-xlg);
     margin-top: 30px;
+    cursor: pointer;
 }
 .slider-circle span:nth-child(2){
     background: var(--color-primary);
@@ -913,6 +1022,18 @@ line-height: 2;
     align-items: center;
     flex-direction: row;
     margin-top: 50px;
+    height: fit-content;
+    transition: 0.5s ease;
+    border-radius: var(--radius-sm);
+}
+.news-card-data:hover{
+    box-shadow: 1px 1px 5px #111111;
+    cursor: pointer;
+}
+.news-card-data .news-card-image img{
+    max-width: 170px;
+    height: auto;
+    object-fit: cover;
 }
 .news-card-content{
     display: flex;
@@ -938,4 +1059,1297 @@ line-height: 2;
 }
 .text-red{
     color: red;
+}
+
+.contact{
+    padding: var(--padding-all);
+    max-width: 1400px;
+    margin: 0% auto;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 0% auto;
+}
+.contact-heading{
+    text-align: center;
+    margin-top: 10px;
+}
+.contact-heading h3 {
+    font-family: var(--font-primary);
+    color: var(--color-secondary);
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-bold);
+    letter-spacing: 2px;
+}
+
+.contact-heading h1 {
+    font-family: var(--font-heading);
+    color: var(--color-primary-dark);
+    font-size: var(--fs-h1);
+    margin-bottom: 10px;
+}
+.contact-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0% auto;
+    margin-top: 50px;
+}
+.contact-card-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-blue-light);
+    padding: 10px 30px;
+    gap: 10px;
+    width: 230px;
+    height: 240px;
+    border-radius: var(--radius-md);
+}
+.contact-card-data:nth-child(2){
+    background: var(--color-primary);
+    color: var(--color-blue-light);
+    font-weight: var(--fw-regular);
+}
+.contact-card-heading h2{
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-bold);
+}
+.contact-card-icon i{
+    font-size: var(--fs-h1);
+    margin-bottom: 10px;
+}
+.contact-card-para p{
+    margin-bottom: 5px;
+}
+
+
+footer {
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 70px 20px 65px;
+    max-width: 1400px;
+    margin: 0% auto;
+    
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ft-head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.ft-logo-heading h1 {
+    margin: 0 0 20px;
+    font-family: var(--font-heading);
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-bold);
+    color: var(--color-blue-light);
+    line-height: 1;
+}
+
+.ft-logo-para p {
+    margin: 0;
+    max-width: 250px;
+    font-family: var(--font-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-regular);
+    line-height: 1.6;
+    color: var(--color-text-light);
+}
+
+.ft-link-heading h3,
+.ft-contact-heading h3,
+.ft-news-heading h3 {
+    margin: 0 0 30px;
+    font-family: var(--font-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--color-text-light);
+}
+
+.ft-link-para {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ft-link-para a {
+    width: fit-content;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-regular);
+    color: var(--color-text-light);
+    transition: 0.3s ease;
+}
+
+.ft-link-para a:hover {
+    color: var(--color-blue-light);
+}
+
+.ft-contact-para {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ft-contact-para p {
+    margin: 0;
+    font-family: var(--font-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-regular);
+    line-height: 1.4;
+    color: var(--color-text-light);
+}
+
+.ft-input {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: var(--color-blue-light);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.ft-input input {
+    width: 100%;
+    height: 100%;
+    padding: 0 12px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-size: var(--fs-md);
+}
+
+.ft-input input::placeholder {
+    color: var(--color-primary);
+    opacity: 1;
+    font-size: var(--fs-md);
+}
+
+.ft-input span {
+    width: 55px;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ft-input svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--color-primary);
+    transition: 0.3s ease;
+    transform: rotate(-45deg);
+}
+
+.ft-input span:hover svg {
+    transform: translateX(3px);
+}
+
+.footer-container hr {
+    width: 100%;
+    margin: 45px 0 42px;
+    border: none;
+    border-top: 2px solid var(--color-blue-light);
+}
+
+.ft-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ft-bottom-para p {
+    margin: 0;
+    font-family: var(--font-primary);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-regular);
+    color: var(--color-text-light);
+}
+
+.ft-bottom-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ft-bottom-social p {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+    font-size: var(--fs-md);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ft-bottom-social p:hover {
+    background: var(--color-white);
+    transform: translateY(-3px);
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .header-container,
+    .navbar-container{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header-container {
+        justify-content: space-between;
+    }
+
+    .emergency-box {
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .hero-container {
+        gap: 30px;
+        padding: 0 30px;
+    }
+
+    .hero-content .hero-heading h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-image img {
+        max-width: 500px;
+    }
+
+    .hero-card {
+        min-width: 260px;
+    }
+
+    .service-container {
+        padding: 40px 30px;
+    }
+
+    .service-content {
+        width: 100%;
+    }
+
+    .booking-container,
+    .doctor-card-container,
+    .news-container,
+    .contact-container,
+    .footer-container {
+        max-width: 900px;
+    }
+
+    .contact-cards {
+        width: 100%;
+    }
+
+    .contact-card-data {
+        width: 210px;
+    }
+}
+
+@media (max-width: 992px) {
+    .herder-container {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .emergency-box{
+         margin: 0% auto;
+        max-width: 100%;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .info-box .info-icon i{
+        font-size: var(--fs-lg);
+    }
+    .info-box .info-content span{
+        font-size: var(--fs-sm);
+    }
+    .info-box .info-content strong{
+        font-size: var(--fs-xs);
+    }
+.top-header .logo{
+    display: none;
+}
+    .navbar {
+        display: none;
+    }
+.nav2-head{
+    display: flex;
+}
+
+    .head-section {
+        max-width: 100%;
+    }
+
+    .hero {
+        max-height: none;
+    }
+
+    .hero-container {
+        min-height: 480px;
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .hero-content {
+        padding: 0;
+    }
+
+    .hero-content .hero-heading h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-content .hero-heading h3 {
+        font-size: 17px;
+    }
+
+    .hero-image img {
+        max-width: 430px;
+        min-height: 420px;
+    }
+
+    .hero-cards-container {
+        display: none;
+    }
+
+    .hero-card {
+        flex: 1 1 250px;
+        min-width: 220px;
+    }
+
+    .staff {
+        padding: 60px 30px 0;
+    }
+
+    .staff-container {
+        width: 100%;
+    }
+
+    .staff-image img {
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .service-container {
+        padding: 50px 30px;
+    }
+
+    .service-content {
+        flex-direction: column;
+        min-height: auto;
+        gap: 30px;
+    }
+
+    .service-left {
+        width: 100%;
+        min-width: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .service-left .left-box {
+        width: 25%;
+    }
+
+    .left-btn {
+        width: 100%;
+    }
+
+    .service-center {
+        width: 100%;
+        flex: none;
+        padding: 10px 0;
+    }
+
+    .service-right {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .right-images {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .right-images img {
+        width: calc(50% - 12px);
+        max-width: 280px;
+    }
+
+    .specialist-card-container {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .speclist-box {
+        min-width: 200px;
+        min-height: 180px;
+        flex: 1 1 200px;
+    }
+
+    .booking {
+        padding: 50px 30px;
+    }
+
+    .booking-container {
+        width: 100%;
+        max-width: 850px;
+        gap: 20px;
+    }
+
+    .booking-content,
+    .booking-form {
+        width: 50%;
+    }
+
+    .booking-form .user-data {
+        width: 100%;
+    }
+
+    .user-data input,
+    .user-data select {
+        width: 50%;
+        min-width: 0;
+    }
+
+    .doctor-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-data {
+        width: 280px;
+        max-width: 100%;
+    }
+
+    .card-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .news-cards {
+        width: 100%;
+    }
+
+    .news-card-data {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .contact-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-card-data {
+        width: calc(50% - 10px);
+        max-width: 300px;
+    }
+
+    .ft-head {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav2-left h1 {
+        font-size: 28px;
+    }
+
+    .nav2-right {
+        gap: 18px;
+    }
+    
+    .menu-btn {
+        font-size: 26px;
+    }
+
+    .search-btn {
+        font-size: 18px;
+    }
+
+    .hero-container {
+        min-height: auto;
+        flex-direction: column;
+        padding: 50px 20px 0;
+        text-align: center;
+    }
+
+    .hero-content {
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-content .hero-heading h3 {
+        font-size: 15px;
+    }
+
+    .hero-content .hero-heading h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-btn {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 380px;
+        min-height: 0;
+        height: auto;
+    }
+
+    .hero-circle {
+        width: 280px;
+        height: 280px;
+        top: -180px;
+        left: -150px;
+    }
+
+    .hero-cards-container {
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-card {
+        width: 100%;
+        min-width: 0;
+        padding: 22px 18px;
+    }
+
+    .staff {
+        padding: 50px 20px 0;
+    }
+
+    .staff-heading h3,
+    .service-heading h3,
+    .specialist-heading h3,
+    .doctor-card-heading h3,
+    .news-heading h3,
+    .contact-heading h3 {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    .staff-heading h1,
+    .service-heading h1,
+    .specialist-heading h1,
+    .doctor-card-heading h1,
+    .news-heading h1,
+    .contact-heading h1 {
+        font-size: 28px;
+        line-height: 1.25;
+    }
+
+    .staff-para {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 5px;
+    }
+
+    .staff-image {
+        margin-top: 30px;
+    }
+
+    .service-container {
+        padding: 45px 20px;
+    }
+
+    .service-left {
+        width: 100%;
+    }
+
+    .service-left .left-box {
+        width: 50%;
+        padding: 20px 10px;
+    }
+
+    .left-icon-name p {
+        font-size: 14px;
+    }
+
+    .center-heading h2 {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .center-li {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .center-li .li-data {
+        margin: 10px 0;
+    }
+
+    .center-li .li-data p {
+        font-size: 14px;
+    }
+
+    .center-para {
+        margin-top: 10px;
+    }
+
+    .right-images {
+        flex-direction: column;
+    }
+
+    .right-images img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .our-specialist {
+        padding: 45px 20px;
+    }
+
+    .specialist-card-container {
+        margin-top: 30px;
+    }
+
+    .speclist-box {
+        min-width: 0;
+        min-height: 160px;
+        flex: 1 1 calc(50% - 2px);
+    }
+
+    .booking {
+        padding: 45px 20px;
+    }
+
+    .booking-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .booking-content,
+    .booking-form {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .booking-heading h1 {
+        font-size: 28px;
+    }
+
+    .booking-para {
+        width: 100%;
+    }
+
+    .booking-para p {
+        line-height: 1.7;
+    }
+
+    .booking-form .user-data {
+        width: 100%;
+    }
+
+    .user-data input,
+    .user-data select {
+        width: 50%;
+        padding: 15px 12px;
+    }
+
+    .user-message textarea {
+        height: 160px;
+    }
+
+    .our-doctors {
+        padding: 45px 20px;
+    }
+
+    .doctor-cards {
+        gap: 15px;
+        margin-top: 35px;
+    }
+
+    .card-data {
+        width: 280px;
+    }
+
+    .news {
+        padding: 45px 20px;
+    }
+
+    .news-cards {
+        gap: 0;
+    }
+
+    .news-card-data {
+        max-width: 500px;
+        margin-top: 30px;
+    }
+
+    .news-card-data .news-card-image {
+        flex-shrink: 0;
+    }
+
+    .news-card-data .news-card-image img {
+        width: 140px;
+        max-width: 140px;
+    }
+
+    .news-card-content {
+        gap: 10px;
+    }
+
+    .news-card-para p {
+        font-size: 16px;
+    }
+
+    .contact {
+        padding: 45px 20px;
+    }
+
+    .contact-cards {
+        margin-top: 35px;
+        gap: 12px;
+    }
+
+    .contact-card-data {
+        width: calc(50% - 6px);
+        height: 220px;
+        padding: 15px 20px;
+    }
+
+    footer {
+        padding: 50px 20px 40px;
+    }
+
+    .ft-head {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .ft-logo-para p {
+        max-width: 100%;
+    }
+
+    .ft-link-heading h3,
+    .ft-contact-heading h3,
+    .ft-news-heading h3 {
+        margin-bottom: 20px;
+    }
+
+    .ft-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar2{
+        display: block;
+    }
+
+    .nav2-left h1 {
+        font-size: 25px;
+    }
+
+    .nav2-right {
+        gap: 14px;
+    }
+    .menu-btn {
+        font-size: 24px;
+    }
+
+    .hero-container {
+        padding: 40px 15px 0;
+    }
+
+    .hero-content .hero-heading h3 {
+        font-size: 13px;
+    }
+
+    .hero-content .hero-heading h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-content .hero-heading h1 br {
+        display: none;
+    }
+
+    .hero-image img {
+        max-width: 320px;
+    }
+
+    .hero-cards-container {
+        padding: 15px;
+    }
+
+    .hero-card {
+        padding: 18px 15px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .card-icon i {
+        font-size: 28px;
+    }
+
+    .staff {
+        padding: 40px 15px 0;
+    }
+
+    .staff-heading h1,
+    .service-heading h1,
+    .specialist-heading h1,
+    .doctor-card-heading h1,
+    .news-heading h1,
+    .contact-heading h1,
+    .booking-heading h1 {
+        font-size: 25px;
+    }
+
+    .staff-heading h3,
+    .service-heading h3,
+    .specialist-heading h3,
+    .doctor-card-heading h3,
+    .news-heading h3,
+    .contact-heading h3 {
+        font-size: 12px;
+    }
+
+    .staff-para p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .service-container {
+        padding: 40px 15px;
+    }
+
+    .service-left .left-box {
+        width: 50%;
+        padding: 18px 5px;
+    }
+
+    .left-box .left-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .left-icon-name p {
+        font-size: 13px;
+    }
+
+    .center-heading h2 {
+        font-size: 20px;
+    }
+
+    .center-li {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .center-li .li-data {
+        margin: 7px 0;
+    }
+
+    .center-para p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .our-specialist {
+        padding: 40px 15px;
+    }
+
+    .specialist-card-container {
+        width: 100%;
+    }
+
+    .speclist-box {
+        flex: 1 1 50%;
+        min-height: 145px;
+    }
+
+    .speclist-box svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    .speclist-box p {
+        font-size: 13px;
+    }
+
+    .booking {
+        padding: 40px 15px;
+    }
+
+    .booking-content {
+        padding: 10px 0;
+    }
+
+    .booking-form {
+        padding: 10px 0;
+    }
+
+    .booking-form .user-data {
+        flex-direction: column;
+    }
+
+    .user-data input,
+    .user-data select {
+        width: 100%;
+        border-right: none;
+        padding: 14px 12px;
+    }
+
+    .user-message textarea {
+        height: 140px;
+    }
+
+    .our-doctors {
+        padding: 40px 15px;
+    }
+
+    .doctor-cards {
+        flex-direction: column;
+    }
+
+    .card-data {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .news {
+        padding: 40px 15px;
+    }
+
+    .news-card-data {
+        flex-direction: column;
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .news-card-data .news-card-image {
+        width: 100%;
+    }
+
+    .news-card-data .news-card-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .news-card-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .news-card-heading h4 {
+        font-size: 11px;
+    }
+
+    .news-card-para p {
+        font-size: 15px;
+    }
+
+    .contact {
+        padding: 40px 15px;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-card-data {
+        width: 100%;
+        max-width: 330px;
+        height: 200px;
+    }
+
+    footer {
+        padding: 45px 15px 35px;
+    }
+
+    .ft-head {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ft-logo-heading h1 {
+        font-size: 28px;
+    }
+
+    .ft-link-heading h3,
+    .ft-contact-heading h3,
+    .ft-news-heading h3 {
+        font-size: 15px;
+    }
+
+    .ft-link-para a,
+    .ft-contact-para p {
+        font-size: 14px;
+    }
+
+    .footer-container hr {
+        margin: 35px 0 30px;
+    }
+
+    .ft-bottom-para p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav2-left h1 {
+        font-size: 22px;
+    }
+
+    .nav2-right {
+        gap: 10px;
+    }
+    .side-menu{
+        top: 33%;
+    }
+    .search-btn {
+        font-size: 16px;
+    }
+
+    .menu-btn {
+        font-size: 21px;
+    }
+
+    .hero-content .hero-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content .hero-heading h3 {
+        font-size: 11px;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+    }
+
+    .hero-card {
+        padding: 15px 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .card-icon i {
+        font-size: 24px;
+    }
+
+    .staff-heading h1,
+    .service-heading h1,
+    .specialist-heading h1,
+    .doctor-card-heading h1,
+    .news-heading h1,
+    .contact-heading h1,
+    .booking-heading h1 {
+        font-size: 22px;
+    }
+
+    .service-left .left-box {
+        padding: 15px 3px;
+    }
+    .service-content .service-center{
+        display: none;
+    }
+    .left-icon-name p {
+        font-size: 11px;
+    }
+
+    .speclist-box {
+        min-height: 130px;
+    }
+
+    .speclist-box svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .speclist-box p {
+        font-size: 12px;
+    }
+
+    .booking-para p,
+    .center-para p {
+        font-size: 13px;
+    }
+
+    .card-data {
+        max-width: 280px;
+    }
+
+    .contact-card-data {
+        max-width: 290px;
+    }
+
+    .ft-input {
+        height: 45px;
+    }
+
+    .ft-bottom-social {
+        gap: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .nav2-left h1 {
+        font-size: 22px;
+    }
+
+    .nav2-right {
+        gap: 10px;
+    }
+    .side-menu{
+        top: 32%;
+    }
+    .search-btn {
+        font-size: 16px;
+    }
+
+    .menu-btn {
+        font-size: 21px;
+    }
+
+    .hero-content .hero-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content .hero-heading h3 {
+        font-size: 11px;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+    }
+
+    .hero-card {
+        padding: 15px 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .card-icon i {
+        font-size: 24px;
+    }
+
+    .staff-heading h1,
+    .service-heading h1,
+    .specialist-heading h1,
+    .doctor-card-heading h1,
+    .news-heading h1,
+    .contact-heading h1,
+    .booking-heading h1 {
+        font-size: 22px;
+    }
+
+    .service-left .left-box {
+        padding: 15px 3px;
+    }
+    .service-content .service-center{
+        display: none;
+    }
+    .left-icon-name p {
+        font-size: 11px;
+    }
+
+    .speclist-box {
+        min-height: 130px;
+    }
+
+    .speclist-box svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .speclist-box p {
+        font-size: 12px;
+    }
+
+    .booking-para p,
+    .center-para p {
+        font-size: 13px;
+    }
+
+    .card-data {
+        max-width: 280px;
+    }
+
+    .contact-card-data {
+        max-width: 290px;
+    }
+
+    .ft-input {
+        height: 45px;
+    }
+
+    .ft-bottom-social {
+        gap: 12px;
+    }
 }
