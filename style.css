@@ -86,13 +86,13 @@ button {
     top: 0%;
     left: 0%;
     z-index: 100;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 .top-header {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1600px;
     background: var(--color-white);
     display: flex;
     justify-content: center;
@@ -249,7 +249,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0% auto;
     position: relative;
 }
@@ -369,7 +369,7 @@ button {
 
     background-size: cover;
     background-position: center;
-    max-width: 1500px;
+    max-width: 1600px;
     width: 100%;
     margin: 0% auto;
 }
@@ -486,7 +486,7 @@ button {
 }
 
 .staff {
-    max-width: 1500px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     padding-top: 80px;
@@ -560,7 +560,7 @@ button {
     text-align: center;
     background: #f9fdfd;
     padding: var(--padding-all);
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0% auto;
 }
 
@@ -773,7 +773,7 @@ button {
 }
 
 .booking {
-    max-width: 1500px;
+    max-width: 1600px;
     padding: var(--padding-all);
     background: linear-gradient(to right,
             rgba(230, 230, 230, 0.9),
@@ -884,7 +884,7 @@ button {
 
 .our-doctors {
     padding: var(--padding-all);
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0% auto;
 }
 
@@ -1014,7 +1014,7 @@ button {
 
 .news {
     padding: var(--padding-all);
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0% auto;
 }
 
@@ -1114,7 +1114,7 @@ button {
 
 .contact {
     padding: var(--padding-all);
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0% auto;
 }
 
@@ -1195,7 +1195,7 @@ footer {
     background: var(--color-primary);
     color: var(--color-text-light);
     padding: 70px 20px 65px;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0% auto;
 }
 
@@ -1386,7 +1386,7 @@ footer {
         url("/Images/staff.jpg");
     background-size: cover;
     background-position: center;
-    max-width: 1500px;
+    max-width: 1600px;
     width: 100%;
     margin: 0% auto;
 }
@@ -1442,7 +1442,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0% auto;
-    max-width: 1500px;
+    max-width: 1600px;
     padding: var(--padding-all);
 }
 
@@ -1526,7 +1526,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0% auto;
     padding: var(--padding-all);
     background: linear-gradient(to right,
@@ -1587,7 +1587,7 @@ footer {
         url("/Images/news.png");
     background-size: cover;
     background-position: center;
-    max-width: 1500px;
+    max-width: 1600px;
     width: 100%;
     margin: 0% auto;
 }
@@ -1625,7 +1625,7 @@ footer {
 /* Service Info Cards */
 .service-info-cards {
     padding: var(--padding-all);
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0% auto;
 }
 
@@ -1737,13 +1737,13 @@ footer {
             rgba(240, 245, 255, 0.45)),
         url("/Images/contact-bg.avif");
     background-size: cover;
-    max-width: 1500px;
+    max-width: 1600px;
     width: 100%;
     margin: 0% auto;
 }
 
 .map-image {
-    max-width: 1500px;
+    max-width: 1600px;
     padding: var(--padding-all);
     margin: 0% auto;
 }
@@ -1759,7 +1759,7 @@ footer {
 }
 
 .contact-form {
-    max-width: 1500px;
+    max-width: 1600px;
     padding: var(--padding-all);
     margin: 0% auto;
 }
