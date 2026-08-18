@@ -1,773 +1,921 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Hospital Website</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Style Sheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-
-
+  <body>
     <!-- Top Header -->
-     <div class="head-section">
-    <header class="top-header">
+    <div class="head-section">
+      <header class="top-header">
         <div class="header-container">
-            <div class="logo">
+          <div class="logo">
+            <h1>
+              <a href="#" class="logo"> MED<span>DICAL</span> </a>
+            </h1>
+          </div>
+          <div class="emergency-box">
+            <div class="info-box">
+              <div class="info-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
 
-                <h1><a href="#" class="logo">
-                        MED<span>DICAL</span>
-                    </a></h1>
+              <div class="info-content">
+                <span>EMERGENCY</span>
+                <strong>(237) 681-812-255</strong>
+              </div>
             </div>
-            <div class="emergency-box">
-                <div class="info-box">
-                    <div class="info-icon">
-                        <i class="fa-solid fa-phone-volume"></i>
-                    </div>
+            <div class="info-box">
+              <div class="info-icon">
+                <i class="fa-regular fa-clock"></i>
+              </div>
 
-                    <div class="info-content">
-                        <span>EMERGENCY</span>
-                        <strong>(237) 681-812-255</strong>
-                    </div>
-                </div>
-                <div class="info-box">
-
-                    <div class="info-icon">
-                        <i class="fa-regular fa-clock"></i>
-                    </div>
-
-                    <div class="info-content">
-                        <span>WORK HOUR</span>
-                        <strong>09:00 - 20:00 Everyday</strong>
-                    </div>
-                </div>
-                <div class="info-box">
-
-                    <div class="info-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-
-                    <div class="info-content">
-                        <span>LOCATION</span>
-                        <strong>0123 Some Place</strong>
-                    </div>
-
-                </div>
-
+              <div class="info-content">
+                <span>WORK HOUR</span>
+                <strong>09:00 - 20:00 Everyday</strong>
+              </div>
             </div>
+            <div class="info-box">
+              <div class="info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div class="info-content">
+                <span>LOCATION</span>
+                <strong>0123 Some Place</strong>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
+      </header>
 
-    <div class="navbar">
+      <div class="navbar">
         <div class="navbar-container">
-            <div class="nav-links">
-                <a href="/index.html" id="active">Home</a>
-                <a href="/About.html">About Us</a>
-                <a href="/Service.html">Services</a>
-                <a href="">Doctors</a>
-                <a href="">News</a>
-                <a href="">Contact</a>
-            </div>
-       
-        <div class="nav-right">
-            <button class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+          <div class="nav-links">
+            <a href="/index.html" id="active">Home</a>
+            <a href="/About.html">About Us</a>
+            <a href="/Service.html">Services</a>
+            <a href="/Doctors.html">Doctors</a>
+            <a href="">News</a>
+            <a href="">Contact</a>
+          </div>
 
-                <a href="#" class="appointment-btn">
-                    Appointment
-                </a>
+          <div class="nav-right">
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <a href="#" class="appointment-btn"> Appointment </a>
+          </div>
         </div>
-         </div>
-    </div>
-    <div class="navbar2">
+      </div>
+      <div class="navbar2">
         <div class="navbar2-container">
-            <div class="nav2-head">
+          <div class="nav2-head">
             <div class="nav2-left">
-                <h1><a href="#">
-                        MED<span>DICAL</span>
-                    </a></h1>
+              <h1>
+                <a href="#"> MED<span>DICAL</span> </a>
+              </h1>
             </div>
-       
-        <div class="nav2-right">
-            <button class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            <button class="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-</button>
 
-                
+            <div class="nav2-right">
+              <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div class="side-menu">
+            <div class="side-menu-links">
+              <a href="/index.html">Home</a>
+              <a href="/About.html">About Us</a>
+              <a href="/Service.html">Services</a>
+              <a href="/Doctors.html">Doctors</a>
+              <a href="">News</a>
+              <a href="">Contact</a>
+            </div>
+            <div class="side-menu-btn">
+              <a href="">Appointment</a>
+            </div>
+          </div>
         </div>
-        </div>
-        <div class="side-menu">
-        <div class="side-menu-links">
-                <a href="/index.html">Home</a>
-                <a href="/About.html">About Us</a>
-                <a href="/Service.html">Services</a>
-                <a href="">Doctors</a>
-                <a href="">News</a>
-                <a href="">Contact</a>
-        </div>
-        <div class="side-menu-btn">
-            <a href="" >Appointment</a>
-        </div>
+      </div>
     </div>
-         </div>
-    </div>
 
-    
-</div>
+    <section class="hero">
+      <!-- Decorative Circle -->
+      <div class="hero-circle"></div>
 
-  <section class="hero">
-
-            <!-- Decorative Circle -->
-            <div class="hero-circle"></div>
-
-<div class="hero-container">
-    <div class="hero-content">
-        <div class="hero-heading">
-        <h3>CARING FOR LIFE</h3 >
-        <h1>Leading the Way <br> in Medical Excellence</h1>
-        </div>
-        <div class="hero-btn">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-heading">
+            <h3>CARING FOR LIFE</h3>
+            <h1>
+              Leading the Way <br />
+              in Medical Excellence
+            </h1>
+          </div>
+          <div class="hero-btn">
             <a href="">Our Services</a>
+          </div>
         </div>
-    </div>
-    <div class="hero-image">
-        <img src="/Images/hero.png" alt="">
-    </div>
+        <div class="hero-image">
+          <img src="/Images/hero.png" alt="" />
+        </div>
+      </div>
+      <div class="hero-cards-container">
+        <div class="hero-card card-dark">
+          <div class="card-text">Book an Appointment</div>
 
-    
-</div>
-<div class="hero-cards-container">
+          <div class="card-icon">
+            <i class="fa-regular fa-calendar-days"></i>
+          </div>
+        </div>
 
-           <div class="hero-card card-dark ">
+        <div class="hero-card card-light">
+          <div class="card-text">Book an Appointment</div>
 
-               <div class="card-text">
-                   Book an Appointment
-               </div>
+          <div class="card-icon">
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+        </div>
 
-               <div class="card-icon">
-                   <i class="fa-regular fa-calendar-days"></i>
-               </div>
+        <div class="hero-card card-blue">
+          <div class="card-text">Book an Appointment</div>
 
-           </div>
+          <div class="card-icon">
+            <i class="fa-regular fa-money-bill-1"></i>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-           <div class="hero-card card-light">
-
-               <div class="card-text">
-                   Book an Appointment
-               </div>
-
-               <div class="card-icon">
-                   <i class="fa-solid fa-user-group"></i>
-               </div>
-
-           </div>
-
-
-
-           <div class="hero-card card-blue">
-
-               <div class="card-text">
-                   Book an Appointment
-               </div>
-
-               <div class="card-icon">
-                   <i class="fa-regular fa-money-bill-1"></i>
-               </div>
-
-           </div>
-
-</div>
-</section>
-
-<section class="staff">
-    <div class="staff-container">
+    <section class="staff">
+      <div class="staff-container">
         <div class="staff-heading">
-        <h3>WELCOME TO MEDDICAL</h3>
-        <h1>A Great Place To Receive Care</h1>
+          <h3>WELCOME TO MEDDICAL</h3>
+          <h1>A Great Place To Receive Care</h1>
         </div>
         <div class="staff-para">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cumque soluta aliquam error, animi ratione rerum, suscipit iusto cupiditate nisi hic consequuntur tempora accusantium repellat distinctio earum nihil illum facere.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cumque
+            soluta aliquam error, animi ratione rerum, suscipit iusto cupiditate
+            nisi hic consequuntur tempora accusantium repellat distinctio earum
+            nihil illum facere.
+          </p>
         </div>
         <div class="staff-btn">
-            <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="staff-image">
-            <img src="/Images/staff.jpg" alt="">
+          <img src="/Images/staff.jpg" alt="" />
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="service">
-    <div class="service-container">
+    <section class="service">
+      <div class="service-container">
         <div class="service-heading">
-        <h3>CARE YOU CAN BELEIVE IN</h3>
-        <h1>Our Services</h1>
+          <h3>CARE YOU CAN BELEIVE IN</h3>
+          <h1>Our Services</h1>
         </div>
         <div class="service-content">
-            <div class="service-left">
-                <div class="left-box">
-                <div class="left-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" ><path d="M480-254 330-104q-23 23-56 23t-56-23L104-218q-23-23-23-56t23-56l150-150-150-150q-23-23-23-56t23-56l114-114q23-23 56-23t56 23l150 150 150-150q23-23 56-23t56 23l114 114q23 23 23 56t-23 56L706-480l150 150q23 23 23 56t-23 56L742-104q-23 23-56 23t-56-23L480-254Zm28.5-277.5Q520-543 520-560t-11.5-28.5Q497-600 480-600t-28.5 11.5Q440-577 440-560t11.5 28.5Q463-520 480-520t28.5-11.5ZM310-536l114-114-150-150-114 114 150 150Zm90 96q17 0 28.5-11.5T440-480q0-17-11.5-28.5T400-520q-17 0-28.5 11.5T360-480q0 17 11.5 28.5T400-440Zm108.5 68.5Q520-383 520-400t-11.5-28.5Q497-440 480-440t-28.5 11.5Q440-417 440-400t11.5 28.5Q463-360 480-360t28.5-11.5ZM560-440q17 0 28.5-11.5T600-480q0-17-11.5-28.5T560-520q-17 0-28.5 11.5T520-480q0 17 11.5 28.5T560-440Zm-24 130 150 150 114-114-150-150-114 114ZM339-621Zm282 282Z"/></svg>
-                </div>
-                <div class="left-icon-name">
-                    <p>Free Checkup</p>
-                </div>
-                </div>
-                <div class="left-box left-box-active">
-                <div class="left-icon">
-                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"/></svg>
-                </div>
-                <div class="left-icon-name">
-                    <p>Cardiogram</p>
-                </div>
-                </div>
-                <div class="left-box">
-                <div class="left-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80v-200H80v-400h200v-200h400v200h200v400H680v200H280ZM160-520h200q10 0 19 5t14 13l35 52 54-162q4-12 14.5-20t23.5-8q10 0 19 5t14 13l68 102h179v-80H600v-200H360v200H160v80Zm200 360h240v-200h200v-80H600q-10 0-19-5t-15-13l-34-52-54 162q-4 12-15 20t-24 8q-10 0-19-5t-14-13l-68-102H160v80h200v200Zm120-320Z"/></svg>
-                </div>
-                <div class="left-icon-name">
-                    <p>DNA Testing</p>
-                </div>
-                </div>
-                <div class="left-box">
-                <div class="left-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M520-40q-33 0-56.5-23.5T440-120v-83q-103-14-171.5-92.5T200-480v-360q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v360q0 106-68.5 184.5T520-203v83h240v80H520Zm30-400h126q2-10 3-19.5t1-20.5v-40H520v-80h160v-80H480v-80h200v-80H280v320h110q33 0 62.5 15t49.5 41q8 11 21 17.5t27 6.5Zm-70 160q49 0 91-21.5t69-58.5h-90q-33 0-62.5-15T438-416q-8-11-21-17.5t-27-6.5H284q14 69 68.5 114.5T480-280Zm-42-160Z"/></svg>
-                </div>
-                <div class="left-icon-name">
-                    <p>Blood Bank</p>
-                </div>
-                </div>
-                <div class="left-btn">
-                    <a href="">View All</a>
-                </div>
+          <div class="service-left">
+            <div class="left-box">
+              <div class="left-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="35px"
+                  viewBox="0 -960 960 960"
+                  width="35px"
+                >
+                  <path
+                    d="M480-254 330-104q-23 23-56 23t-56-23L104-218q-23-23-23-56t23-56l150-150-150-150q-23-23-23-56t23-56l114-114q23-23 56-23t56 23l150 150 150-150q23-23 56-23t56 23l114 114q23 23 23 56t-23 56L706-480l150 150q23 23 23 56t-23 56L742-104q-23 23-56 23t-56-23L480-254Zm28.5-277.5Q520-543 520-560t-11.5-28.5Q497-600 480-600t-28.5 11.5Q440-577 440-560t11.5 28.5Q463-520 480-520t28.5-11.5ZM310-536l114-114-150-150-114 114 150 150Zm90 96q17 0 28.5-11.5T440-480q0-17-11.5-28.5T400-520q-17 0-28.5 11.5T360-480q0 17 11.5 28.5T400-440Zm108.5 68.5Q520-383 520-400t-11.5-28.5Q497-440 480-440t-28.5 11.5Q440-417 440-400t11.5 28.5Q463-360 480-360t28.5-11.5ZM560-440q17 0 28.5-11.5T600-480q0-17-11.5-28.5T560-520q-17 0-28.5 11.5T520-480q0 17 11.5 28.5T560-440Zm-24 130 150 150 114-114-150-150-114 114ZM339-621Zm282 282Z"
+                  />
+                </svg>
+              </div>
+              <div class="left-icon-name">
+                <p>Free Checkup</p>
+              </div>
             </div>
-            <div class="service-center">
-                <div class="center-heading">
-                    <h2>A Passing For putting Patients first.</h2>
-                </div>
-                <div class="center-li">
-                    <div class="li-left">
-                    <div class="li-data">
-                        <span></span>
-                        <p>A Passion For Healing</p>
-                    </div>
-                    <div class="li-data">
-                        <span></span>
-                        <p>A Passion For Healing</p>
-                    </div>
-                    <div class="li-data">
-                        <span></span>
-                        <p>A Passion For Healing</p>
-                    </div>
-                    </div>
-                    <div class="li-left">
-                    <div class="li-data">
-                        <span></span>
-                        <p>A Passion For Healing</p>
-                    </div>
-                    <div class="li-data">
-                        <span></span>
-                        <p>A Passion For Healing</p>
-                    </div>
-                    <div class="li-data">
-                        <span></span>
-                        <p>A Passion For Healing</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="center-para">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos delectus eum optio quis illo vero, aliquam commodi, eligendi voluptatum voluptatem assumendt. Impedit praesentium sint consequuntur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Icusantium! Laboriosam aspernatur ad obcaecati quod ipsum. Est delectus, maiores id quasi eveniet provident 
-                </div>
+            <div class="left-box left-box-active">
+              <div class="left-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#1f1f1f"
+                >
+                  <path
+                    d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"
+                  />
+                </svg>
+              </div>
+              <div class="left-icon-name">
+                <p>Cardiogram</p>
+              </div>
             </div>
-            <div class="service-right">
-                <div class="right-images">
-                    <img src="/Images/service1.png" alt="">
-                    <img src="/Images/service2.png" alt="">
-                </div>
+            <div class="left-box">
+              <div class="left-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#1f1f1f"
+                >
+                  <path
+                    d="M280-80v-200H80v-400h200v-200h400v200h200v400H680v200H280ZM160-520h200q10 0 19 5t14 13l35 52 54-162q4-12 14.5-20t23.5-8q10 0 19 5t14 13l68 102h179v-80H600v-200H360v200H160v80Zm200 360h240v-200h200v-80H600q-10 0-19-5t-15-13l-34-52-54 162q-4 12-15 20t-24 8q-10 0-19-5t-14-13l-68-102H160v80h200v200Zm120-320Z"
+                  />
+                </svg>
+              </div>
+              <div class="left-icon-name">
+                <p>DNA Testing</p>
+              </div>
             </div>
+            <div class="left-box">
+              <div class="left-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#1f1f1f"
+                >
+                  <path
+                    d="M520-40q-33 0-56.5-23.5T440-120v-83q-103-14-171.5-92.5T200-480v-360q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v360q0 106-68.5 184.5T520-203v83h240v80H520Zm30-400h126q2-10 3-19.5t1-20.5v-40H520v-80h160v-80H480v-80h200v-80H280v320h110q33 0 62.5 15t49.5 41q8 11 21 17.5t27 6.5Zm-70 160q49 0 91-21.5t69-58.5h-90q-33 0-62.5-15T438-416q-8-11-21-17.5t-27-6.5H284q14 69 68.5 114.5T480-280Zm-42-160Z"
+                  />
+                </svg>
+              </div>
+              <div class="left-icon-name">
+                <p>Blood Bank</p>
+              </div>
+            </div>
+            <div class="left-btn">
+              <a href="">View All</a>
+            </div>
+          </div>
+          <div class="service-center">
+            <div class="center-heading">
+              <h2>A Passing For putting Patients first.</h2>
+            </div>
+            <div class="center-li">
+              <div class="li-left">
+                <div class="li-data">
+                  <span></span>
+                  <p>A Passion For Healing</p>
+                </div>
+                <div class="li-data">
+                  <span></span>
+                  <p>A Passion For Healing</p>
+                </div>
+                <div class="li-data">
+                  <span></span>
+                  <p>A Passion For Healing</p>
+                </div>
+              </div>
+              <div class="li-left">
+                <div class="li-data">
+                  <span></span>
+                  <p>A Passion For Healing</p>
+                </div>
+                <div class="li-data">
+                  <span></span>
+                  <p>A Passion For Healing</p>
+                </div>
+                <div class="li-data">
+                  <span></span>
+                  <p>A Passion For Healing</p>
+                </div>
+              </div>
+            </div>
+            <div class="center-para">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                delectus eum optio quis illo vero, aliquam commodi, eligendi
+                voluptatum voluptatem assumendt. Impedit praesentium sint
+                consequuntur.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Icusantium! Laboriosam aspernatur ad obcaecati quod ipsum. Est
+                delectus, maiores id quasi eveniet provident
+              </p>
+            </div>
+          </div>
+          <div class="service-right">
+            <div class="right-images">
+              <img src="/Images/service1.png" alt="" />
+              <img src="/Images/service2.png" alt="" />
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="our-specialist">
-    <div class="specialist-container">
+    <section class="our-specialist">
+      <div class="specialist-container">
         <div class="specialist-heading">
-            <h3>ALWAYS CARING</h3>
-        <h1>Our Specialties</h1>
+          <h3>ALWAYS CARING</h3>
+          <h1>Our Specialties</h1>
         </div>
         <div class="specialist-card-container">
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
             </div>
-            <div class="speclist-box left-box-active">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+          </div>
+          <div class="speclist-box left-box-active">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
             </div>
-            <div class="speclist-box">
-                <div class="speclist-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"/></svg>
-                </div>
-                <div class="specialist-name">
-                    <p>Neurology</p>
-                </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
             </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
+            </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
+            </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
+            </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
+            </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
+            </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
+            </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
+            </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
+            </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
+            </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
+            </div>
+          </div>
+          <div class="speclist-box">
+            <div class="speclist-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M290-840q57 0 105.5 27t84.5 78q42-54 89-79.5T670-840q89 0 149.5 60.5T880-629q0 15-1.5 29.5T873-570h-62q5-15 7-29.5t2-29.5q0-66-42-108.5T670-780q-51 0-95 31.5T504-660h-49q-26-56-70-88t-95-32q-66 0-108 42.5T140-629q0 15 2 29.5t7 29.5H87q-4-15-5.5-29.5T80-629q0-90 60.5-150.5T290-840Zm-98 450h78q38 42 89.5 91.5T480-186q69-63 120-112.5t89-91.5h79q-42 49-102 108.5T521-144l-41 37-41-37q-85-78-145-137.5T192-390Zm250 60q9 0 16-5.5t10-14.5l61-181 46 68q5 6 11 9.5t14 3.5h310v-60H617l-72-106q-5-7-12-10t-15-3q-9 0-16.5 5.5T491-609l-60 181-47-69q-5-6-10.5-9.5T360-510H50v60h292l72 107q5 7 12.5 10t15.5 3Zm38-153Z"
+                />
+              </svg>
+            </div>
+            <div class="specialist-name">
+              <p>Neurology</p>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="booking">
-    <div class="booking-container">
+    <section class="booking">
+      <div class="booking-container">
         <div class="booking-content">
-            <div class="booking-heading">
-                <h1>Book an Apponitment</h1>
-            </div>
-            <div class="booking-para">
-                <p>Lorem ipsum dolor sit repellat ducimus deleniti soluta doloribus consequatur facere enim accusamus iure, corrupti dolore nesciunt deserunt aspernatur quibusdam officia. Molestias, sunt temporibus!</p>
-            </div>
+          <div class="booking-heading">
+            <h1>Book an Apponitment</h1>
+          </div>
+          <div class="booking-para">
+            <p>
+              Lorem ipsum dolor sit repellat ducimus deleniti soluta doloribus
+              consequatur facere enim accusamus iure, corrupti dolore nesciunt
+              deserunt aspernatur quibusdam officia. Molestias, sunt temporibus!
+            </p>
+          </div>
         </div>
         <div class="booking-form">
-            <div class="user-data">
-                <input type="text" placeholder="Name">
-                <select name="" id="">
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                </select>
-            </div>
-            <div class="user-data">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Number">
-            </div>
-            <div class="user-data">
-            
-                <select name="" id="">
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                </select>
-                <select name="" id="">
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                </select>
-            </div>
-            <div class="user-data">
-            
-                <select name="" id="">
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                </select>
-                <select name="" id="">
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                    <option value="">Gender</option>
-                </select>
-            </div>
-            <div class="user-message">
-                <textarea placeholder="Message"></textarea>
-            </div>
-            <div class="submit-btn">
-                <a href="">SUBMIT</a>
-            </div>
+          <div class="user-data">
+            <input type="text" placeholder="Name" />
+            <select name="" id="">
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+            </select>
+          </div>
+          <div class="user-data">
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Number" />
+          </div>
+          <div class="user-data">
+            <select name="" id="">
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+            </select>
+            <select name="" id="">
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+            </select>
+          </div>
+          <div class="user-data">
+            <select name="" id="">
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+            </select>
+            <select name="" id="">
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+              <option value="">Gender</option>
+            </select>
+          </div>
+          <div class="user-message">
+            <textarea placeholder="Message"></textarea>
+          </div>
+          <div class="submit-btn">
+            <a href="">SUBMIT</a>
+          </div>
         </div>
-    </div>
-</section>
-       
-<section class="our-doctors">
-        <div class="doctor-card-container">
-            <div class="doctor-card-heading">
-        <h3>TRUSTED CARE</h3>
-        <h1>Our Doctors</h1>
-            </div>
-            <div class="doctor-cards">
-                <div class="card-data">
-                    <div class="card-image">
-                        <img src="/Images/card2.png" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-heading">
+      </div>
+    </section>
 
-                            <h4>Doctor's Name</h4>
-                            <h3>Neurology</h3>
-                        </div>
-                        <div class="card-social">
-                            <p><i class="fa-brands fa-linkedin-in"></i></p>
-                            <p><i class="fa-brands fa-facebook-f"></i></p>
-                            <p><i class="fa-brands fa-instagram"></i></p>
-                        </div>
-                        <div class="card-btn">
-                            <a href="">View Profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-data">
-                    <div class="card-image">
-                        <img src="/Images/card1.png" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-heading">
-
-                            <h4>Doctor's Name</h4>
-                            <h3>Neurology</h3>
-                        </div>
-                        <div class="card-social">
-                            <p><i class="fa-brands fa-linkedin-in"></i></p>
-                            <p><i class="fa-brands fa-facebook-f"></i></p>
-                            <p><i class="fa-brands fa-instagram"></i></p>
-                        </div>
-                        <div class="card-btn">
-                            <a href="">View Profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-data">
-                    <div class="card-image">
-                        <img src="/Images/card3.png" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-heading">
-
-                            <h4>Doctor's Name</h4>
-                            <h3>Neurology</h3>
-                        </div>
-                        <div class="card-social">
-                            <p><i class="fa-brands fa-linkedin-in"></i></p>
-                            <p><i class="fa-brands fa-facebook-f"></i></p>
-                            <p><i class="fa-brands fa-instagram"></i></p>
-                        </div>
-                        <div class="card-btn">
-                            <a href="">View Profile</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-circle">
-                <span></span><span></span><span></span>
-            </div>
+    <section class="our-doctors">
+      <div class="doctor-card-container">
+        <div class="doctor-card-heading">
+          <h3>TRUSTED CARE</h3>
+          <h1>Our Doctors</h1>
         </div>
-</section>
-
-<section class="news">
-    <div class="news-container">
-        <div class="news-heading">
-            <h3>BETTER INFORMATION , BETTER HEALTH</h3>
-        <h1>News</h1>
-        </div>
-        <div class="news-cards">
-            <div class="news-card-data">
-                <div class="news-card-image">
-                    <img src="/Images/news.png" alt="" >
-                </div>
-                <div class="news-card-content">
-                <div class="news-card-heading">
-                    <h4>Monday 05, September 2021 | By Auther</h4>
-                </div>
-                <div class="news-card-para">
-                    <p>This Article's Title goes Here, but not too long.</p>
-                </div>
-                <div class="news-card-icons">
-                    <p>
-                        <span><i class="fa-regular fa-eye"></i>68</span>
-                        <span><i class="fa-regular fa-heart text-red"></i>76</span>
-                    </p>
-                </div>
-                </div>
+        <div class="doctor-cards">
+          <div class="card-data">
+            <div class="card-image">
+              <img src="/Images/card2.png" alt="" />
             </div>
-            <div class="news-card-data">
-                <div class="news-card-image">
-                    <img src="/Images/news.png" alt="">
-                </div>
-                <div class="news-card-content">
-                <div class="news-card-heading">
-                    <h4>Monday 05, September 2021 | By Auther</h4>
-                </div>
-                <div class="news-card-para">
-                    <p>This Article's Title goes Here, but not too long.</p>
-                </div>
-                <div class="news-card-icons">
-                    <p>
-                        <span><i class="fa-regular fa-eye"></i>68</span>
-                        <span><i class="fa-regular fa-heart text-red"></i>76</span>
-                    </p>
-                </div>
-                </div>
-            </div>
-            <div class="news-card-data">
-                <div class="news-card-image">
-                    <img src="/Images/news.png" alt="">
-                </div>
-                <div class="news-card-content">
-                <div class="news-card-heading">
-                    <h4>Monday 05, September 2021 | By Auther</h4>
-                </div>
-                <div class="news-card-para">
-                    <p>This Article's Title goes Here, but not too long.</p>
-                </div>
-                <div class="news-card-icons">
-                    <p>
-                        <span><i class="fa-regular fa-eye"></i>68</span>
-                        <span><i class="fa-regular fa-heart text-red"></i>76</span>
-                    </p>
-                </div>
-                </div>
-            </div>
-            <div class="news-card-data">
-                <div class="news-card-image">
-                    <img src="/Images/news.png" alt="">
-                </div>
-                <div class="news-card-content">
-                <div class="news-card-heading">
-                    <h4>Monday 05, September 2021 | By Auther</h4>
-                </div>
-                <div class="news-card-para">
-                    <p>This Article's Title goes Here, but not too long.</p>
-                </div>
-                <div class="news-card-icons">
-                    <p>
-                        <span><i class="fa-regular fa-eye"></i>68</span>
-                        <span><i class="fa-regular fa-heart text-red"></i>76</span>
-                    </p>
-                </div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="slider-circle">
-                <span></span><span></span><span></span>
-            </div>
-    </div>
-</section>
-
-<section class="contact">
-    <div class="contact-container">
-        <div class="contact-heading">
-        <h3>GET IN TOUCH</h3>
-        <h1>Contact</h1>
-            </div>
-            <div class="contact-cards">
-                <div class="contact-card-data">
-                    <div class="contact-card-icon">
-                        <i class="fa-solid fa-phone-volume"></i>
-                    </div>
-                    <div class="contact-card-heading">
-                        <h2>EMERGENCY</h2>
-                    </div>
-                    <div class="contact-card-para">
-                        <p>(237) 829-374-982</p>
-                        <p>(237) 829-374-982</p>
-                    </div>
-                </div>
-                <div class="contact-card-data">
-                    <div class="contact-card-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="contact-card-heading">
-                        <h2>LOCATION</h2>
-                    </div>
-                    <div class="contact-card-para">
-                        <p>(237) 829-374-982</p>
-                        <p>(237) 829-374-982</p>
-                    </div>
-                </div>
-                <div class="contact-card-data">
-                    <div class="contact-card-icon">
-                        <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <div class="contact-card-heading">
-                        <h2>EMAIL</h2>
-                    </div>
-                    <div class="contact-card-para">
-                        <p>(237) 829-374-982</p>
-                        <p>(237) 829-374-982</p>
-                    </div>
-                </div>
-                <div class="contact-card-data">
-                    <div class="contact-card-icon">
-                        <i class="fa-regular fa-clock"></i>
-                    </div>
-                    <div class="contact-card-heading">
-                        <h2>WORK</h2>
-                    </div>
-                    <div class="contact-card-para">
-                        <p>(237) 829-374-982</p>
-                        <p>(237) 829-374-982</p>
-                    </div>
-                </div>
-            </div>
-    </div>
-</section>
-
-<footer>
-    <div class="footer-container">
-        <div class="ft-head">
-            <div class="ft-logo">
-        <div class="ft-logo-heading">
-            <h1>MEDDICAL</h1>
-        </div>
-        <div class="ft-logo-para">
-                <p>Leading the Way in Medical Excellence, Trusted Care.</p>
-        </div>
-        </div>
-        <div class="ft-links">
-            <div class="ft-link-heading">
-                <h3>Important Links</h3>
-            </div>
-            <div class="ft-link-para">
-                <a href="">Appointment</a>
-                <a href="">Doctor</a>
-                <a href="">Services</a>
-                <a href="">About Us</a>
-            </div>
-        </div>
-        <div class="ft-contact">
-            <div class="ft-contact-heading">
-                <h3>Contact Us</h3>
-            </div>
-            <div class="ft-contact-para">
-                <p>Call: (237) 823-748-989</p>
-                <p>Email: abcdef@gmail.com</p>
-                <p>Adress: 098-327-823-2 Some Place</p>
-                <p>Some Country</p>
-            </div>
-        </div>
-        <div class="ft-news">
-            <div class="ft-news-heading">
-                <h3>Newsletter</h3>
-            </div>
-            <div class="ft-news-para">
-                <div class="ft-input">
-                <input type="text" placeholder="Enter Your email address">
-                <span><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#1f1f1f"><path d="M120-160v-640l760 320-760 320Zm66.67-102 520.66-218-520.66-220v158.67L428-480l-241.33 60v158Zm0 0v-438 438Z"/></svg></span>
-                </div>
-            </div>
-        </div>
-        </div>
-        <hr>
-        <div class="ft-bottom">
-            <div class="ft-bottom-para">
-                <p>2026 Hospital's name All Rights by PNTEC-LTD</p>
-            </div>
-            <div class="ft-bottom-social">
+            <div class="card-content">
+              <div class="card-heading">
+                <h4>Doctor's Name</h4>
+                <h3>Neurology</h3>
+              </div>
+              <div class="card-social">
                 <p><i class="fa-brands fa-linkedin-in"></i></p>
                 <p><i class="fa-brands fa-facebook-f"></i></p>
                 <p><i class="fa-brands fa-instagram"></i></p>
+              </div>
+              <div class="card-btn">
+                <a href="">View Profile</a>
+              </div>
             </div>
+          </div>
+          <div class="card-data">
+            <div class="card-image">
+              <img src="/Images/card1.png" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4>Doctor's Name</h4>
+                <h3>Neurology</h3>
+              </div>
+              <div class="card-social">
+                <p><i class="fa-brands fa-linkedin-in"></i></p>
+                <p><i class="fa-brands fa-facebook-f"></i></p>
+                <p><i class="fa-brands fa-instagram"></i></p>
+              </div>
+              <div class="card-btn">
+                <a href="">View Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-data">
+            <div class="card-image">
+              <img src="/Images/card3.png" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="card-heading">
+                <h4>Doctor's Name</h4>
+                <h3>Neurology</h3>
+              </div>
+              <div class="card-social">
+                <p><i class="fa-brands fa-linkedin-in"></i></p>
+                <p><i class="fa-brands fa-facebook-f"></i></p>
+                <p><i class="fa-brands fa-instagram"></i></p>
+              </div>
+              <div class="card-btn">
+                <a href="">View Profile</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</footer>
+        <div class="slider-circle"><span></span><span></span><span></span></div>
+      </div>
+    </section>
 
-<script src="/script.js"></script>
-</body>
+    <section class="news">
+      <div class="news-container">
+        <div class="news-heading">
+          <h3>BETTER INFORMATION , BETTER HEALTH</h3>
+          <h1>News</h1>
+        </div>
+        <div class="news-cards">
+          <div class="news-card-data">
+            <div class="news-card-image">
+              <img src="/Images/news.png" alt="" />
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-heading">
+                <h4>Monday 05, September 2021 | By Auther</h4>
+              </div>
+              <div class="news-card-para">
+                <p>This Article's Title goes Here, but not too long.</p>
+              </div>
+              <div class="news-card-icons">
+                <p>
+                  <span><i class="fa-regular fa-eye"></i>68</span>
+                  <span><i class="fa-regular fa-heart text-red"></i>76</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="news-card-data">
+            <div class="news-card-image">
+              <img src="/Images/news.png" alt="" />
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-heading">
+                <h4>Monday 05, September 2021 | By Auther</h4>
+              </div>
+              <div class="news-card-para">
+                <p>This Article's Title goes Here, but not too long.</p>
+              </div>
+              <div class="news-card-icons">
+                <p>
+                  <span><i class="fa-regular fa-eye"></i>68</span>
+                  <span><i class="fa-regular fa-heart text-red"></i>76</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="news-card-data">
+            <div class="news-card-image">
+              <img src="/Images/news.png" alt="" />
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-heading">
+                <h4>Monday 05, September 2021 | By Auther</h4>
+              </div>
+              <div class="news-card-para">
+                <p>This Article's Title goes Here, but not too long.</p>
+              </div>
+              <div class="news-card-icons">
+                <p>
+                  <span><i class="fa-regular fa-eye"></i>68</span>
+                  <span><i class="fa-regular fa-heart text-red"></i>76</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="news-card-data">
+            <div class="news-card-image">
+              <img src="/Images/news.png" alt="" />
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-heading">
+                <h4>Monday 05, September 2021 | By Auther</h4>
+              </div>
+              <div class="news-card-para">
+                <p>This Article's Title goes Here, but not too long.</p>
+              </div>
+              <div class="news-card-icons">
+                <p>
+                  <span><i class="fa-regular fa-eye"></i>68</span>
+                  <span><i class="fa-regular fa-heart text-red"></i>76</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-circle"><span></span><span></span><span></span></div>
+      </div>
+    </section>
 
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-heading">
+          <h3>GET IN TOUCH</h3>
+          <h1>Contact</h1>
+        </div>
+        <div class="contact-cards">
+          <div class="contact-card-data">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-card-heading">
+              <h2>EMERGENCY</h2>
+            </div>
+            <div class="contact-card-para">
+              <p>(237) 829-374-982</p>
+              <p>(237) 829-374-982</p>
+            </div>
+          </div>
+          <div class="contact-card-data">
+            <div class="contact-card-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-card-heading">
+              <h2>LOCATION</h2>
+            </div>
+            <div class="contact-card-para">
+              <p>(237) 829-374-982</p>
+              <p>(237) 829-374-982</p>
+            </div>
+          </div>
+          <div class="contact-card-data">
+            <div class="contact-card-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="contact-card-heading">
+              <h2>EMAIL</h2>
+            </div>
+            <div class="contact-card-para">
+              <p>(237) 829-374-982</p>
+              <p>(237) 829-374-982</p>
+            </div>
+          </div>
+          <div class="contact-card-data">
+            <div class="contact-card-icon">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div class="contact-card-heading">
+              <h2>WORK</h2>
+            </div>
+            <div class="contact-card-para">
+              <p>(237) 829-374-982</p>
+              <p>(237) 829-374-982</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="ft-head">
+          <div class="ft-logo">
+            <div class="ft-logo-heading">
+              <h1>MEDDICAL</h1>
+            </div>
+            <div class="ft-logo-para">
+              <p>Leading the Way in Medical Excellence, Trusted Care.</p>
+            </div>
+          </div>
+          <div class="ft-links">
+            <div class="ft-link-heading">
+              <h3>Important Links</h3>
+            </div>
+            <div class="ft-link-para">
+              <a href="">Appointment</a>
+              <a href="">Doctor</a>
+              <a href="">Services</a>
+              <a href="">About Us</a>
+            </div>
+          </div>
+          <div class="ft-contact">
+            <div class="ft-contact-heading">
+              <h3>Contact Us</h3>
+            </div>
+            <div class="ft-contact-para">
+              <p>Call: (237) 823-748-989</p>
+              <p>Email: abcdef@gmail.com</p>
+              <p>Adress: 098-327-823-2 Some Place</p>
+              <p>Some Country</p>
+            </div>
+          </div>
+          <div class="ft-news">
+            <div class="ft-news-heading">
+              <h3>Newsletter</h3>
+            </div>
+            <div class="ft-news-para">
+              <div class="ft-input">
+                <input type="text" placeholder="Enter Your email address" />
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="40px"
+                    viewBox="0 -960 960 960"
+                    width="40px"
+                    fill="#1f1f1f"
+                  >
+                    <path
+                      d="M120-160v-640l760 320-760 320Zm66.67-102 520.66-218-520.66-220v158.67L428-480l-241.33 60v158Zm0 0v-438 438Z"
+                    /></svg
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="ft-bottom">
+          <div class="ft-bottom-para">
+            <p>2026 Hospital's name All Rights by PNTEC-LTD</p>
+          </div>
+          <div class="ft-bottom-social">
+            <p><i class="fa-brands fa-linkedin-in"></i></p>
+            <p><i class="fa-brands fa-facebook-f"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
 </html>
