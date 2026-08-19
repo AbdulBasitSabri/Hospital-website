@@ -103,8 +103,8 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 17px;
-    width: 1200px;
+    padding: 17px 0px;
+    width: 1300px;
 }
 
 .logo {
@@ -182,8 +182,8 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    width: 1200px;
+    padding: 20px 0px;
+    width: 1300px;
 }
 
 .nav-links {
@@ -446,7 +446,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .hero-card {
@@ -457,7 +457,7 @@ button {
     padding: 30px 20px;
     color: var(--color-white);
     border-radius: var(--radius-sm);
-    min-width: 300px;
+    min-width: 330px;
     position: relative;
     bottom: 0px;
 }
@@ -847,7 +847,9 @@ button {
     border-right: 1px solid var(--color-white);
     border-bottom: 1px solid var(--color-white);
 }
-
+.user-data option{
+    color: var(--color-black);
+}
 .user-data input::placeholder {
     color: var(--color-white);
     font-size: var(--fs-md);
@@ -1749,13 +1751,12 @@ footer {
 }
 
 .map-image-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0% auto;
 }
 
-.map-image-container img {
+.map-image-container iframe {
     width: 100%;
-    background-size: cover;
 }
 
 .contact-form {
@@ -1876,6 +1877,22 @@ footer {
     gap: 10px;
     margin-bottom: 10px;
 }
+
+/* News-file */
+.news-file {
+    position: relative;
+    max-height: 550px;
+    background: linear-gradient(to right,
+            rgba(230, 230, 230, 0.8),
+            rgba(240, 245, 255, 0.45)),
+        url("/Images/service2.png");
+    background-size: cover;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0% auto;
+}
+
+
 
 @media (max-width: 1200px) {
 
